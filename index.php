@@ -1,5 +1,7 @@
 <?php
 
+//first change
+
 class palindrome{
 	// Показать Подробнее
 	public function getMorePalindrome($str){
