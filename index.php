@@ -63,21 +63,6 @@ class palindrome{
 		return $arrP;		
 	}
 
-	// Поиск Конкретного полиндрома
-	protected function searchLengthP(&$reg, &$rev, $i, &$words, $sw = ''){
-		if(preg_match('#'.$reg.'#u', $rev, $m)){
-			$sw = $m[0];
-
-			if($i+1<count($words)){
-				$i++;
-				$reg .= preg_quote($words[$i]);
-
-				return $this->searchLengthP($reg, $rev, $i, $words, $sw);
-			}
-		}
-
-		return $sw;
-	}
 }
 
 
